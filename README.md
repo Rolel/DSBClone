@@ -71,7 +71,7 @@ The "-debug.hex" releases have debugging enabled. You can hook a RS232 adapter t
 
 Public releases:
 
-* 2021-08-29: Improvements on latency by filtering spam sent by games to the player.
+* 2021-08-29: Fix a bug on fadeout. Improvements on latency by filtering spam sent by games to the player.
 
 
 
