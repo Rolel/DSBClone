@@ -3,6 +3,7 @@ This is a replacement board for the SEGA Digital Sound Boards 1 and 2 used on se
 
 ![Assembled DSBClone board](Docs/assets/assembled-board.jpg)
 
+
 # Historical background
 
 The SEGA Digital Sound Boards 1 and 2 are dedicated to playing music (the BGMs) on several SEGA games. The music is stored in maskroms specific to each game. It is a card separate from the main stack of the game, sometimes located in its own cage.
@@ -33,8 +34,6 @@ They were used on the following games:
   * Spikeout FE
   * Star Wars Trilogy
   * Top Skater
-
-
 
 
 # Features
@@ -92,4 +91,13 @@ It's plug'n'play without modifying the wiring:
 * the white 5-pin socket(s) for the audio outputs
 
 ![Top view wiring](Docs/assets/top-view-wiring.jpg)
-	 
+
+
+# Updating
+
+Update procedure can be found in [Docs/Update.md](Docs/Update.md) documentation.
+
+
+# Ready to use board
+
+You can buy a ready to use board on arcade forums like [Neo-Arcadia](https://www.neo-arcadia.com/forum/viewtopic.php?f=9&t=75510) (French) or [Arcade Projects](https://www.arcade-projects.com/threads/dsb-clone-digital-sound-board-sega.17832/) (English).
