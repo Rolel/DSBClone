@@ -1,6 +1,7 @@
 # DSB Clone
 This is a replacement board for the SEGA Digital Sound Boards 1 and 2 used on several SEGA arcade games.
 
+![Assembled DSBClone board](Docs/assets/assembled-board.jpg)
 
 # Historical background
 
@@ -68,6 +69,8 @@ The audio files are to be placed in the "MP3" directory located at the root. Eac
 Bonus: the "1000_xxx.mp3" file is automatically read when the card is started. A cool way to have a jingle, music on hold, etc. Personally I put the "SEGAAAA" jingle 
 
 
+![Track list example: SCUD Race](Docs/assets/tracklist-scud.jpg) ![Track list example: SEGA Rally 2](Docs/assets/tracklist-sr2.jpg)
+
 Several packs corresponding to the most common games are available. Here are those currently known:
 * Sega Rally 2, CD quality from OST: https://segaretro.org/Sega_Rally_2_(album)
 * Scud Race, CD quality from OST: https://segaretro.org/Scud_Race_Sound_Tracks
@@ -88,5 +91,5 @@ It's plug'n'play without modifying the wiring:
 * the 6-pin white socket for MIDI
 * the white 5-pin socket(s) for the audio outputs
 
-	 
+![Top view wiring](Docs/assets/top-view-wiring.jpg)
 	 
