@@ -58,6 +58,23 @@ In comparison with the original card:
 
 Hardware, Software and Sound Pack creation details not public yet.
 
+
+# Updating
+
+Update procedure can be found in [Docs/Update.md](Docs/Update.md) documentation.
+
+# Releases
+
+Public releases can be found in the [Releases](Releases/) folder. Update procedure can be found in [Docs/Update.md](Docs/Update.md) documentation.
+
+The "-debug.hex" releases have debugging enabled. You can hook a RS232 adapter to the debug pin on the board (default 115200bps, 8 data bits, 0 parity bit).
+
+Public releases:
+
+* 2021-08-29: Improvements on latency by filtering spam sent by games to the player.
+
+
+
 # Installation
 
 1. Prepare the SD card.
@@ -80,9 +97,6 @@ Several packs corresponding to the most common games are available. Here are tho
 
 As they are copyrighted materials they are not shared.
 
-
-
-
 2. Connect to the arcade cabinet
 
 It's plug'n'play without modifying the wiring:
@@ -92,10 +106,6 @@ It's plug'n'play without modifying the wiring:
 
 ![Top view wiring](Docs/assets/top-view-wiring.jpg)
 
-
-# Updating
-
-Update procedure can be found in [Docs/Update.md](Docs/Update.md) documentation.
 
 
 # Ready to use board
