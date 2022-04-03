@@ -77,7 +77,9 @@ Public releases:
 * 2022-04-02: 
   * Change fadeout behavior; sound volume is now restored after fade.
   * Latency of MP3 player is tested on start; this improves latency.
-
+* 2022-04-03:
+  * Fix intro sound not being played on some MP3 players.
+  * Fix advertisement BGM on Scud Race.
 
 # Installation
 
