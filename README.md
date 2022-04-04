@@ -28,7 +28,7 @@ They were used on the following games:
 
 * Second version (DSB2):
   * Daytona 2
-  * Lost World Special
+  * Lost World
   * Sega Rally 2
   * Spikeout
   * Spikeout FE
@@ -80,6 +80,9 @@ Public releases:
 * 2022-04-03:
   * Fix intro sound not being played on some MP3 players.
   * Fix advertisement BGM on Scud Race.
+* 2022-04-05:
+  * Fix a case where sound effects would affect BGM.
+
 
 # Installation
 
