@@ -82,7 +82,8 @@ Public releases:
   * Fix advertisement BGM on Scud Race.
 * 2022-04-05:
   * Fix a case where sound effects would affect BGM.
-
+* 2022-04-06:
+  * Reverted advertisement BGM played by DSB on Scud Race.
 
 # Installation
 
