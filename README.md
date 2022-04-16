@@ -86,7 +86,8 @@ Public releases:
   * Reverted advertisement BGM played by DSB on Scud Race.
 * 2022-04-07:
   * Track looping now working on Scud Race.
-
+* 2022-04-16:
+  * Track loop bugfix for Scud Race.
 
 # Installation
 
