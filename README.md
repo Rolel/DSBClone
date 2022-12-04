@@ -26,6 +26,8 @@ They were used on the following games:
   * Virtua Racing
   * Wing Wars
 
+*Please note that Virtua Racing, Virtua Fighter, Wing War & Star Wars Arcade use DSB1 with an addon board in charge of playing sounds. The DSBclone doesn't handle this. As a result I suggest you avoid clone for such games and **DSB1 support is disabled by default in source code**.*
+
 * Second version (DSB2):
   * Daytona 2
   * Lost World
@@ -50,18 +52,17 @@ They were used on the following games:
 
 In comparison with the original card:
 * There is a slight latency (a few milliseconds) when starting the music. This can be understood if you pay attention with a twin that contains a DSB Sega and a DSB Clone. We can play on the MP3 to reset everything, or simply put two clones.
-* The sound quality is much better: high quality MP3 / WAV replace the original 112kbits MPEG2.
+* The sound quality is much better: high quality MP3 (320kbps) / WAV replace the original 112kbits MPEG2.
 * Possibility to customize the game's BGMs.
 
 
-# Build 
+# Build from sources
 
-Hardware, Software and Sound Pack creation details not public yet.
+Guide to build from sources is available in [Docs/Build.md](Docs/Build.md)
 
+# Updating from release
 
-# Updating
-
-Update procedure can be found in [Docs/Update.md](Docs/Update.md) documentation.
+Update procedure can be found in [Docs/Update.md](Docs/Update.md).
 
 # Releases
 
@@ -87,6 +88,8 @@ Public releases:
   * Track looping now working on Scud Race.
 * 2022-04-16:
   * Track loop bugfix for Scud Race.
+* 2022-12-04:
+  * Removed support of DSB1 command set as they conflict with some DSB2 games.
 
 # Installation
 
