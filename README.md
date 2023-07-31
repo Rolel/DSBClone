@@ -26,7 +26,7 @@ They were used on the following games:
   * Virtua Racing
   * Wing Wars
 
-*Please note that Virtua Racing, Virtua Fighter, Wing War & Star Wars Arcade use DSB1 with an addon board in charge of playing sounds. The DSBclone doesn't handle this. As a result I suggest you avoid clone for such games and **DSB1 support is disabled by default in source code**.*
+*Please note that Daytona USA, Virtua Racing, Virtua Fighter, Wing War & Star Wars Arcade use DSB1 with an addon board in charge of playing sounds. The DSBclone doesn't handle this. As a result I suggest you avoid clone for such games and **DSB1 support is disabled by default in source code**.*
 
 * Second version (DSB2):
   * Daytona 2
