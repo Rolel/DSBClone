@@ -90,6 +90,9 @@ Public releases:
   * Track loop bugfix for Scud Race.
 * 2022-12-04:
   * Removed support of DSB1 command set as they conflict with some DSB2 games.
+* 2024-01-04:
+  * Improvements on calibration for clone/original MP3 module. Releases available for DSB2, DSB1 & SpikeOut.
+
 
 # Installation
 
