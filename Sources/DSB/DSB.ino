@@ -514,15 +514,13 @@ void calibrateSendSpace() {
   uint16_t status = 0;
   
   do {
-    // Reset the interrupt counter
-    errorCounter = 0;
     // Do the test: stop+start
     dfPlayer.stop();
     dfPlayer.playRandomTrackFromAll();
     // getStatus doesn't work on MH2024K24SS :/
     status = dfPlayer.getStatus();
     // Should be playing music without error
-    if (status == 0 || errorCounter > 0) {
+    if (status == 0 || status == 512 || status == 529) {
       // Increase space between 2 commands and reset loop counter
       dfPlayer.increaseSendSpace();
       okLoop = 0;
@@ -532,15 +530,17 @@ void calibrateSendSpace() {
     
   #ifdef DEBUG
     softSerialDebugger.print(F("Calibration (status/errors/ok): "));
-    softSerialDebugger.print(status);
-    softSerialDebugger.print(errorCounter);
-    softSerialDebugger.print(okLoop);
-    softSerialDebugger.println(".");
+    softSerialDebugger.printf("%d status / %d errors / %d OKloop.\n", status, errorCounter, okLoop);
   #endif
-  // 5 consecutive success ? We are calibrated !
+  // 10 consecutive success ? We are calibrated !
   } while(okLoop < 10);
+  // A little bit more to be secure
+  dfPlayer.increaseSendSpace();
   // Don't forget to stop at the end
   dfPlayer.stop();
+  #ifdef DEBUG
+    softSerialDebugger.printf("Final value: %d ms.\n", dfPlayer.getSendSpace());
+  #endif
 }
 
 
