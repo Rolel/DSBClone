@@ -63,7 +63,7 @@ enum LastCommandType: byte
 // UARTs setup
 struct DSB2Settings : public midi::DefaultSettings
 {
-  static const long BaudRate = 38400;
+  static const long BaudRate = 31250;
 };
 MIDI_CREATE_CUSTOM_INSTANCE(HardwareSerial, Serial, MIDI, DSB2Settings);
 
