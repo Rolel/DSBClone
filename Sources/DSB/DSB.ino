@@ -40,6 +40,9 @@
 // Enable DSB1 support
 #define ENABLE_DSB1 false
 
+// Enable SpikeOut patches
+#define ENABLE_SPIKEOUT false
+
 // This is the minimal delay between 2 dfPlayer commands
 #define DFPLAYER_SENDSPACE 30
 
@@ -154,7 +157,7 @@ class Mp3Notify
 
 DfMp3 dfPlayer(softSerial);
 
-
+TimeOut repeatTimeout;
 
 void setup() {
   int result, i;
@@ -295,8 +298,9 @@ void handleAfterTouchPoly(byte channel, byte note, byte pressure) {
       lastCommand = LastCommandType::Play;
 
       // Activate repeat if channel 16
-      if (channel == 16) {
-        TimeOut(500, setRepeat); // a delayed setRepeatPlayCurrentTrack
+      if (channel == 16 || ENABLE_SPIKEOUT) {
+        // a delayed setRepeatPlayCurrentTrack
+        repeatTimeout.timeOut(500, setRepeat, TIMEOUT::UNDELETABLE);
         // dfPlayer.setRepeatPlayCurrentTrack(true);
       }
       
@@ -529,7 +533,7 @@ void calibrateSendSpace() {
     
   #ifdef DEBUG
     softSerialDebugger.print(F("Calibration (status/errors/ok): "));
-    softSerialDebugger.printf("%d status / %d errors / %d OKloop.\n", status, errorCounter, okLoop);
+    softSerialDebugger.printf("%d status / %d errors / %d OKloop.\n\r", status, errorCounter, okLoop);
   #endif
   // 10 consecutive success ? We are calibrated !
   } while(okLoop < 10);
