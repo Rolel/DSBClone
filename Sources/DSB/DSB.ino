@@ -115,7 +115,6 @@ class Mp3Notify
     }
 
     static void OnPlayFinished(DfMp3& mp3, DfMp3_PlaySources source, uint16_t track) {
-      PrintlnSourceAction(source, "online");
       softSerialDebugger.print(F("DFPlayer: Play finished for #"));
       softSerialDebugger.println(track);
     }
