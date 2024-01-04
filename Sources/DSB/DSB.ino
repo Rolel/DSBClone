@@ -341,7 +341,7 @@ void handleAfterTouchPoly(byte channel, byte note, byte pressure) {
   if (note == 1 || note == 2) {
     // DFPlayer handles volume values from 0 to 30 , we'll go up to 22.5 by dividing input command (90 max) by 4
     // TODO: replace division by a lookup table for speed ?
-    byte TMPsoundVolume = pressure / 4;
+    byte TMPsoundVolume = pressure >> 2;
 
     #ifdef DEBUG
       softSerialDebugger.print(F("CMD: Volume change. Value: "));
@@ -378,7 +378,7 @@ void handleAfterTouchPoly(byte channel, byte note, byte pressure) {
       softSerialDebugger.print(F("CMD: Fadeout "));
       softSerialDebugger.println(pressure);
     #endif
-    fadeOut(pressure / 4);
+    fadeOut(pressure >> 2);
     lastCommand = LastCommandType::FadeOut;
   }
 }
