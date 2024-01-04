@@ -35,13 +35,13 @@
 
 
 // Enable debug messages over serial
-// #define DEBUG
+#define DEBUG
 
 // Enable DSB1 support
 #define ENABLE_DSB1 false
 
 // Enable SpikeOut patches
-#define ENABLE_SPIKEOUT false
+#define ENABLE_SPIKEOUT true
 
 // This is the minimal delay between 2 dfPlayer commands
 #define DFPLAYER_SENDSPACE 30
@@ -542,7 +542,7 @@ void calibrateSendSpace() {
   // Don't forget to stop at the end
   dfPlayer.stop();
   #ifdef DEBUG
-    softSerialDebugger.printf("Final value: %d ms.\n", dfPlayer.getSendSpace());
+    softSerialDebugger.printf("Final value: %d ms.\n\r", dfPlayer.getSendSpace());
   #endif
 }
 
