@@ -35,13 +35,13 @@
 
 
 // Enable debug messages over serial
-#define DEBUG
+// #define DEBUG
 
 // Enable DSB1 support
 #define ENABLE_DSB1 false
 
 // Enable SpikeOut patches
-#define ENABLE_SPIKEOUT true
+#define ENABLE_SPIKEOUT false
 
 // This is the minimal delay between 2 dfPlayer commands
 #define DFPLAYER_SENDSPACE 30
@@ -63,7 +63,7 @@ enum LastCommandType: byte
 // UARTs setup
 struct DSB2Settings : public midi::DefaultSettings
 {
-  static const long BaudRate = 31250;
+  static const long BaudRate = 38400;
 };
 MIDI_CREATE_CUSTOM_INSTANCE(HardwareSerial, Serial, MIDI, DSB2Settings);
 
