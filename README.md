@@ -92,6 +92,8 @@ Public releases:
   * Removed support of DSB1 command set as they conflict with some DSB2 games.
 * 2024-01-04:
   * Improvements on calibration for clone/original MP3 module. Releases available for DSB2, DSB1 & SpikeOut.
+* 2024-08-24:
+  * A special source code is proposed for SpikeOut FE. It compress sound volume to be closer to the original game.
 
 
 # Installation
