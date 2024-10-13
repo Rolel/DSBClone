@@ -52,13 +52,30 @@ They were used on the following games:
 
 In comparison with the original card:
 * There is a slight latency (a few milliseconds) when starting the music. This can be understood if you pay attention with a twin that contains a DSB Sega and a DSB Clone. We can play on the MP3 to reset everything, or simply put two clones.
-* The sound quality is much better: high quality MP3 (320kbps) / WAV replace the original 112kbits MPEG2.
+* The sound quality is much better: high quality MP3 / WAV replace the original 112kbits MPEG2.
 * Possibility to customize the game's BGMs.
 
 
-# Build from sources
+# Build 
 
-Guide to build from sources is available in [Docs/Build.md](Docs/Build.md)
+## PCB
+
+You can build the PCB with PCBway services. Upload the `DSBclone.kicad_pcb.zip` file to the "Quick order" tool and keep the default settings. That's all !
+
+## BOM:
+* U1: HCPL-0600 SOIC-8 optocoupler
+* D1, D4: any diode that can handle 1A (T7 is ok)
+* D2: 0805 led
+* D3: 0805 1N4148, used to drop down DfPlayer voltage
+* R1,R3,R5: 0805 1k resistor
+* R2,R4: 0805 470o resistor
+* F1: 0805 1A fuse
+* DfPlayer: get the original one from reliable source (Mouser, Farnell...) and not an AliExpress clone.
+* Arduino Nano: a 328p is ok.
+* CN5: IDC 2x5 vertical connector
+* CN6,7: JST B5P SH
+* CN1: JST B6P SH 
+* SPK, DBG, MidiRX: debug header, shouldn't be populated unless you want to develop
 
 # Updating from release
 

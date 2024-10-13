@@ -1,0 +1,41 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>KiCad BOM Example 5</title>
+    </head>
+    <body>
+    <h1>/home/rolel/Documents/Kicad/DSBclone/DSBclone.sch</h1>
+    <p>Sun 17 May 2020 23:32:24 CEST</p>
+    <p>Eeschema 5.1.5+dfsg1-2</p>
+    <p><b>Component Count:</b>26</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
+    <tr><td>C1</td><td>1</td><td>100nF</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C2</td><td>1</td><td>470uF</td><td>Device:CP</td><td>Capacitor_THT:CP_Radial_D5.0mm_P2.50mm</td><td>Polarized capacitor</td><td></td></tr>
+    <tr><td>D1</td><td>1</td><td>D</td><td>Device:D</td><td>Diode_SMD:D_SMA-SMB_Universal_Handsoldering</td><td>Diode</td><td></td></tr>
+    <tr><td>D2</td><td>1</td><td>LED</td><td>Device:LED</td><td>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</td><td>Light emitting diode</td><td></td></tr>
+    <tr><td>D3</td><td>1</td><td>1N4148WS</td><td>Diode:1N4148WS</td><td>Diode_SMD:D_SOD-323_HandSoldering</td><td>75V 0.15A Fast switching Diode, SOD-323</td><td></td></tr>
+    <tr><td>F1</td><td>1</td><td>Fuse</td><td>Device:Fuse</td><td>Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder</td><td>Fuse</td><td></td></tr>
+    <tr><td>H1, H2, H3</td><td>3</td><td>MountingHole</td><td>Mechanical:MountingHole_Pad</td><td>MountingHole:MountingHole_3.2mm_M3_DIN965_Pad</td><td>Mounting Hole with connection</td><td></td></tr>
+    <tr><td>J1</td><td>1</td><td>DFplayerP1</td><td>Connector_Generic:Conn_01x08</td><td>Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical</td><td>Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J2</td><td>1</td><td>DFplayerP2</td><td>Connector_Generic:Conn_01x08</td><td>Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical</td><td>Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J3</td><td>1</td><td>CN5</td><td>Connector_Generic:Conn_02x05_Odd_Even</td><td>Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical</td><td>Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J4</td><td>1</td><td>CN6</td><td>Connector_Generic:Conn_01x05</td><td>Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</td><td>Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J5</td><td>1</td><td>CN7</td><td>Connector_Generic:Conn_01x05</td><td>Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</td><td>Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J6</td><td>1</td><td>CN1</td><td>Connector_Generic:Conn_01x06</td><td>Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical</td><td>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J7</td><td>1</td><td>SPK</td><td>Connector_Generic:Conn_01x03</td><td>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</td><td>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J8</td><td>1</td><td>DBG</td><td>Connector_Generic:Conn_01x03</td><td>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</td><td>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J9</td><td>1</td><td>MIDIrx</td><td>Connector_Generic:Conn_01x01</td><td>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</td><td>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>P1</td><td>1</td><td>Digital</td><td>Connector_Generic:Conn_01x15</td><td>Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical</td><td>Generic connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>P2</td><td>1</td><td>Analog</td><td>Connector_Generic:Conn_01x15</td><td>Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical</td><td>Generic connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>R1, R3, R5</td><td>3</td><td>1k</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</td><td>Resistor</td><td></td></tr>
+    <tr><td>R2</td><td>1</td><td>470</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</td><td>Resistor</td><td></td></tr>
+    <tr><td>R4</td><td>1</td><td>330</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</td><td>Resistor</td><td></td></tr>
+    <tr><td>U1</td><td>1</td><td>HCPL-0600</td><td>Isolator:HCPL-0600</td><td>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</td><td>Single High Speed LSTTL/TTL Compatible Optocoupler with enable, dV/dt 5000/us, VCM 1000, max 7V VCC, SOIC-8</td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    
