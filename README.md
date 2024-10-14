@@ -62,8 +62,7 @@ In comparison with the original card:
 
 You can build the PCB with PCBway services. Upload the `DSBclone.kicad_pcb.zip` file to the "Quick order" tool and keep the default settings. That's all !
 
-It can be even easier: use the ![shared project](https://www.pcbway.com/project/shareproject/DSB_Clone_replacement_for_SEGA_Digital_Sound_Boards_1_and_2_b2268928.html).
-
+It can be even easier: use the shared project: https://www.pcbway.com/project/shareproject/DSB_Clone_replacement_for_SEGA_Digital_Sound_Boards_1_and_2_b2268928.html 
 
 ## BOM:
 * U1: HCPL-0600 SOIC-8 optocoupler
